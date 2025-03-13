@@ -2,23 +2,23 @@
 
 Submitted by: **Isaac Lara**
 
-**Name of your app** is an app that ... [TODO] 
+**Trivia** This is a basic trivia app that shows a question and prompts the user with 4 answers once they click an answer it willl go to the next question. 
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] User can view the current question and 4 different answers
-- [ ] User can view the next question after tapping an answer
-- [ ] User can answer at least 3 different questions
+- [x] User can view the current question and 4 different answers
+- [x] User can view the next question after tapping an answer
+- [x] User can answer at least 3 different questions
 
 
 The following **optional** features are implemented:
 
-- [ ] User can use the vertical orientation of the app on any device
-- [ ] User can track the question they are on and how many questions are left
+- [x] User can use the vertical orientation of the app on any device
+- [x] User can track the question they are on and how many questions are left
 - [ ] User can see how many questions they got correct after answering all questions
 - [ ] User should be able to restart the game after they've finished answering all questions
 
@@ -34,7 +34,8 @@ Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove th
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had alot of trouble and couldnt figure out how to wrap text in a button. No matter the size I made the button it would not show the full word unless i presss on it multiple times. this limited me to single word answers.
+Another issue i couldnt figure out was why after i pressed an answer it would show the default button text i set. 
 
 ## License
 
