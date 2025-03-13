@@ -10,79 +10,87 @@ import UIKit
 
 
 class TriviaViewController: UIViewController {
-    var question = 1
-    var correct = 0
-    var question1: [String] = [
-        "What is the smallest planet in our solar system?",
-        "Mars",
-        "Jupiter",
-        "Earth",
-        "Pluto"
-    ]
+    private var correct = 0
+    private var gotRight = 0
+    private var questions = [triviaQuestions]()
+    private var currentQuestion = 0
     
-    var question2: [String] = [
-        "What year was the first iPhone released?",
-        "2005",
-        "2007",
-        "2010",
-        "2012"
-    ]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        questions = questionData()
+        loadQuestions(with: questions[currentQuestion])
+    }
     
-    var question3: [String] = [
-        "Who wrote the novel 1984?",
-        "Aldous Huxley",
-        "George Orwell",
-        "J.R.R. Tolkien",
-        "Ray Bradbury"
-    ]
-    
-    func reset() {
+    private func questionData() -> [triviaQuestions] {
+        let question = triviaQuestions(question: "What is the smallest planet in our solar system?",
+                                       answer1: "Mars",
+                                       answer2: "Jupiter",
+                                       answer3: "Earth",
+                                       answer4: "Pluto",
+                                       correctAnswer: 4)
+        let question2 = triviaQuestions(question: "What year was the first iPhone released?",
+                                        answer1: "2005",
+                                        answer2: "2007",
+                                        answer3: "2010",
+                                        answer4: "2012",
+                                        correctAnswer: 2)
+        let question3 = triviaQuestions(question: "Which planet in our solar system has the most moons?",
+                                        answer1: "Jupiter",
+                                        answer2: "Earth",
+                                        answer3: "Saturn",
+                                        answer4: "Neptune",
+                                        correctAnswer: 3)
         
+        return [question,question2,question3]
+    }
+    
+    private func loadQuestions(with question: triviaQuestions) {
+        questionLabel.text = "Question \(currentQuestion + 1)/3"
+        middleQuestionLabel.text = question.question
+        answer1.titleLabel?.text = question.answer1
+        answer2.titleLabel?.text = question.answer2
+        answer3.titleLabel?.text = question.answer3
+        answer4.titleLabel?.text = question.answer4
+        correct = question.correctAnswer
     }
     
     func checkAnswer(answer: Int) {
-        if (question == 1 && answer == 4) {
-            correct += 1
-        } else if (question == 2 && answer == 4) {
-            correct += 1
-        } else if (question == 3 && answer == 4) {
-            correct += 1
+        if answer == correct {
+            gotRight += 1
         }
+        currentQuestion += 1
         
-        nextQuestion()
-        
+        if currentQuestion > 2 {
+            currentQuestion = 0
+        }
     }
-
-    func nextQuestion() {
-        
-    }
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        reset()
-    }
-
+    
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var middleQuestionLabel: UILabel!
 
     @IBOutlet weak var answer1: UIButton!
     @IBAction func answer1click(_ sender: Any) {
         checkAnswer(answer: 1)
+        loadQuestions(with: questions[currentQuestion])
     }
     
     @IBOutlet weak var answer2: UIButton!
     @IBAction func answer2click(_ sender: Any) {
         checkAnswer(answer: 2)
+        loadQuestions(with: questions[currentQuestion])
     }
     
     @IBOutlet weak var answer3: UIButton!
     @IBAction func answer3click(_ sender: Any) {
         checkAnswer(answer: 3)
+        loadQuestions(with: questions[currentQuestion])
     }
     
     @IBOutlet weak var answer4: UIButton!
     @IBAction func answer4click(_ sender: Any) {
         checkAnswer(answer: 4)
+        loadQuestions(with: questions[currentQuestion])
     }
     
     

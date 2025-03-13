@@ -23,73 +23,75 @@
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofZ-rp-Gpj">
+                                <rect key="frame" x="16" y="214" width="361" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5L7-Gi-AIH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kjQ-5g-1eg">
-                                <rect key="frame" x="55" y="461" width="283" height="300"/>
+                                <rect key="frame" x="55" y="414" width="283" height="320"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkn-qR-Fr4">
-                                        <rect key="frame" x="0.0" y="0.0" width="283" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tkn-qR-Fr4">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="tPe-bb-jO5"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="6vj-Fh-Lht"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="answer1"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="AnswerOne"/>
                                         <connections>
                                             <action selector="answer1click:" destination="kp4-Nm-tYq" eventType="touchUpInside" id="7iW-VF-w81"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTK-ue-V5Z">
-                                        <rect key="frame" x="0.0" y="80" width="283" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jTK-ue-V5Z">
+                                        <rect key="frame" x="0.0" y="85" width="283" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="iZu-tU-4MU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="7DR-vZ-a4I"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="answer2"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="AnswerTwo"/>
                                         <connections>
                                             <action selector="answer2click:" destination="kp4-Nm-tYq" eventType="touchUpInside" id="gZs-nm-dmX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHp-ev-Xn1">
-                                        <rect key="frame" x="0.0" y="160" width="283" height="60"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mHp-ev-Xn1">
+                                        <rect key="frame" x="0.0" y="170" width="283" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="OaU-VN-mF3"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="fCq-7P-hN5"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="answer3"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="AnswerThree"/>
                                         <connections>
                                             <action selector="answer3click:" destination="kp4-Nm-tYq" eventType="touchUpInside" id="5ex-Qn-Ckh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVy-0K-YnS">
-                                        <rect key="frame" x="0.0" y="240" width="283" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bVy-0K-YnS">
+                                        <rect key="frame" x="0.0" y="255" width="283" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="fzv-83-Nkk"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="rIq-4e-xiy"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="answer4"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="AnswerFour"/>
                                         <connections>
                                             <action selector="answer4click:" destination="kp4-Nm-tYq" eventType="touchUpInside" id="MZf-AM-NAK"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofZ-rp-Gpj">
-                                <rect key="frame" x="96" y="187" width="200" height="189"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qb5-da-Dlp"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
+                            <constraint firstItem="ofZ-rp-Gpj" firstAttribute="top" secondItem="TjX-PD-kl4" secondAttribute="bottom" constant="100" id="0ih-us-hIX"/>
                             <constraint firstItem="kjQ-5g-1eg" firstAttribute="leading" secondItem="Qb5-da-Dlp" secondAttribute="leading" constant="55" id="1IO-9L-NmG"/>
+                            <constraint firstItem="ofZ-rp-Gpj" firstAttribute="centerX" secondItem="8Bg-Wy-a4s" secondAttribute="centerX" id="2zl-Qo-OZd"/>
                             <constraint firstItem="TjX-PD-kl4" firstAttribute="top" secondItem="Qb5-da-Dlp" secondAttribute="top" constant="25" id="Ige-lk-jzY"/>
-                            <constraint firstItem="Qb5-da-Dlp" firstAttribute="trailing" secondItem="kjQ-5g-1eg" secondAttribute="trailing" constant="55" id="JoL-de-wkr"/>
                             <constraint firstItem="Qb5-da-Dlp" firstAttribute="trailing" secondItem="kjQ-5g-1eg" secondAttribute="trailing" constant="55" id="OoI-ak-OzS"/>
+                            <constraint firstItem="kjQ-5g-1eg" firstAttribute="top" secondItem="ofZ-rp-Gpj" secondAttribute="bottom" constant="50" id="Rwc-mU-Zmg"/>
                             <constraint firstItem="TjX-PD-kl4" firstAttribute="centerX" secondItem="8Bg-Wy-a4s" secondAttribute="centerX" id="VzV-Ev-sGy"/>
-                            <constraint firstItem="Qb5-da-Dlp" firstAttribute="bottom" secondItem="kjQ-5g-1eg" secondAttribute="bottom" constant="57" id="Y4L-YM-lNA"/>
-                            <constraint firstItem="kjQ-5g-1eg" firstAttribute="centerX" secondItem="ofZ-rp-Gpj" secondAttribute="centerX" id="f15-wr-q3J"/>
-                            <constraint firstItem="kjQ-5g-1eg" firstAttribute="top" secondItem="ofZ-rp-Gpj" secondAttribute="bottom" constant="85" id="f4m-H1-ndQ"/>
                         </constraints>
                     </view>
                     <connections>
